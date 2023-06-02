@@ -44,6 +44,10 @@ const Demo = () => {
     
   }
 
+  const handleCopy = (copyUrl) => {
+    
+  }
+
   return (
     <section className="mt-16 w-full max-w-xl">
       <div className="flex flex-col w-full gap-2">
@@ -112,7 +116,9 @@ const Demo = () => {
                 Article <span className="blue_gradient">Summary</span>
               </h2>
               <div className="summary_box">
-                <p>{article.summary}</p>
+                <p className="font-inter font-medium text-sm text-gray-700">
+                  {article.summary}
+                </p>
               </div>
             </div>
           )
