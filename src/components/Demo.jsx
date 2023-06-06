@@ -44,6 +44,9 @@ const Demo = () => {
     
   }
 
+  const clearHistory =  () => {
+    setAllArticles([]);
+  }
   const handleCopy = (copyUrl) => {
     
   }
@@ -75,6 +78,15 @@ const Demo = () => {
           </button>
         </form>
         {/* Browser URL History */}
+        <div>
+          <button
+            type="button"
+            onClick={clearHistory}
+          >
+            Clear History
+
+          </button>
+        </div>
         <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
           {allArticles.map((item, index) => (
             <div
