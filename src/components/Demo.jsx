@@ -47,9 +47,7 @@ const Demo = () => {
   const clearHistory =  () => {
     setAllArticles([]);
   }
-  const handleCopy = (copyUrl) => {
-    
-  }
+
 
   return (
     <section className="mt-16 w-full max-w-xl">
